@@ -123,20 +123,12 @@ The Raspberry Pi's configuration must be altered before it can retrieve data fro
 
 #. Let's first make sure everything is up to date by running the following two commands.
 
-    .. raw:: html
-
-        <run></run>
-
     .. code-block::
 
         sudo apt-get update
         sudo apt-get upgrade
 
 #. In order to enable I2C on the Raspberry Pi, we will need to launch the Raspberry configuration tool once the Raspberry Pi has been updated.
-
-    .. raw:: html
-
-        <run></run>
 
     .. code-block:: 
 
@@ -150,19 +142,11 @@ The Raspberry Pi's configuration must be altered before it can retrieve data fro
 
 #. I2C is now enabled, so we can go ahead and install the packages we will use to talk to the ADXL345 module. In the latest Raspberry Pi OS(Bullseye), these tools are already installed by default, you can skip this step.
 
-    .. raw:: html
-
-        <run></run>
-
     .. code-block:: 
 
         sudo apt-get install python3-dev python3-pip python3-smbus i2c-tools -y
 
 #. Now let's check if the Raspberry Pi can see the ADXL345 module.
-
-    .. raw:: html
-
-        <run></run>
 
     .. code-block::
 
@@ -202,29 +186,17 @@ To talk to ADXL345, we will use |link_adafruit_adxl345_python|, but you need to 
 
 #. If you have Python 2.x, use the following command to install Python 3.
 
-    .. raw:: html
-
-        <run></run>
-
     .. code-block::
 
         sudo apt-get install python3
 
 #. Now you can use the following command to install |link_adafruit_adxl345_python|.
 
-    .. raw:: html
-
-        <run></run>
-
     .. code-block::
 
         sudo pip3 install adafruit-circuitpython-adxl34x
 
 #. Now that all the packages we need are installed on the Raspberry Pi, we can start writing Python script to read information from the accelerometer. Use the following command to create a new blank script.
-
-    .. raw:: html
-
-        <run></run>
 
     .. code-block::
 
@@ -251,10 +223,6 @@ To talk to ADXL345, we will use |link_adafruit_adxl345_python|, but you need to 
     When you are sure that all the code is correct, you can press ``CTRL+X`` then ``Y`` and then ``ENTER`` to save it.
 
 #. With the code now done, let’s go ahead and run the script.
-
-    .. raw:: html
-
-        <run></run>
 
     .. code-block::
 
